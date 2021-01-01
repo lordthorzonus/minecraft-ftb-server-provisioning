@@ -32,4 +32,4 @@ jobs:
       - name: Lint Ansible Playbooks
         run: |
           ansible-playbook minecraft-server-configuration.yml --syntax-check
-          ansible-lint minecraft-sever-configuration.yml -exclude=${HOME}/.ansible/roles/
+          ansible-lint minecraft-sever-configuration.yml --exclude=${HOME}/.ansible/roles/
