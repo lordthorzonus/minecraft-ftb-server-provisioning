@@ -1,3 +1,4 @@
+# Minecraft server related variables
 minecraft_server_port: "25565"
 minecraft_modpack_id: "4"
 minecraft_server_memory_amount: "4G"
@@ -5,10 +6,10 @@ minecraft_server_memory_amount: "4G"
 # Docker related variables
 docker_compose_version: "1.26.0"
 docker_package_state: latest
-
 docker_users:
   - minecraft
 
+# Ansible ssh settings
 ansible_user: minecraft
 ansible_port: 4567
 
