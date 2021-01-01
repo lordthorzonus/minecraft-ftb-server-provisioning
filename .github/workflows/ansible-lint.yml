@@ -7,6 +7,7 @@ jobs:
     env:
       ANSIBLE_VERSION: "2.10.0"
       PYTHON_VERSION: "3.9.1"
+      ANSIBLE_LINT_VERSION: "4.3.7"
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout repository
@@ -20,7 +21,7 @@ jobs:
       - name: Install Ansible & Ansible lint & dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install ansible-lint ansible==${{ env.ANSIBLE_VERSION }}
+          pip install ansible-lint==${{ env.ANSIBLE_LINT_VERSION }} ansible==${{ env.ANSIBLE_VERSION }}
 
       - name: Install external collections
         run: ansible-galaxy collection install -r requirements.yml
@@ -31,4 +32,4 @@ jobs:
       - name: Lint Ansible Playbooks
         run: |
           ansible-playbook minecraft-server-configuration.yml --syntax-check
-          ansible-lint minecraft-sever-configuration.yml
+          ansible-lint minecraft-sever-configuration.yml -exclude=${HOME}/.ansible/roles/

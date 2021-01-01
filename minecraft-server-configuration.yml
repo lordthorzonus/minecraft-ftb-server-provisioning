@@ -4,4 +4,4 @@
     - { name: geerlingguy.docker, become: true }
     - { name: fail2ban, become: true }
     - { name: ufw, become: true }
-    - minecraft-server
+    - minecraft_server

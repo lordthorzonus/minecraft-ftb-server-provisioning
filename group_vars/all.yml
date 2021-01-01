@@ -5,7 +5,7 @@ minecraft_server_memory_amount: "4G"
 
 # Docker related variables
 docker_compose_version: "1.26.0"
-docker_package_state: latest
+docker_package_state: present
 docker_users:
   - minecraft
 

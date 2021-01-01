@@ -2,7 +2,7 @@
 - name: Install ufw
   apt:
     name: ufw
-    state: latest
+    state: present
     update_cache: true
 
 - name: Enable ufw service
