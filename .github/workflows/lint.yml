@@ -8,6 +8,9 @@ jobs:
       TERRAFORM_VERSION: "0.14.3"
     runs-on: ubuntu-20.04
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Install terraform
         uses: hashicorp/setup-terraform@v1
         with:
