@@ -1,0 +1,42 @@
+---
+- name: Ensure Pip is installed
+  apt:
+    name: python3-pip
+    state: latest
+    update_cache: true
+  become: true
+
+- name: Ensure Docker SDK for python is installed
+  pip:
+    name: docker
+    state: latest
+
+- name: Ensure docker-compose is installed with pip to allow ansibles docker-compose module to work
+  pip:
+    name: docker-compose
+    state: present
+    version: "{{docker_compose_version}}"
+
+- name: Ensure minecraft server folders are present
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: minecraft
+  loop:
+    - /home/minecraft/server
+    - /home/minecraft/server/data
+
+- name: Copy minecraft server docker-compose.yml
+  template:
+    src: docker-compose.j2
+    dest: /home/minecraft/server/docker-compose.yml
+  notify: restart minecraft server
+
+- name: Ensure minecraft server container is running
+  community.general.docker_compose:
+    project_src: /home/minecraft/server
+    state: present
+
+- name: Flush handlers
+  meta: flush_handlers
+

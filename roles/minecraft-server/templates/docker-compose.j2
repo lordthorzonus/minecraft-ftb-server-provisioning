@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+    minecraft:
+        image: itzg/minecraft-server:multiarch
+        volumes:
+            - ./data:/data
+        environment:
+            EULA: "TRUE"
+            TYPE: FTBA
+            MEMORY: {{ minecraft_server_memory_amount }}
+            DIFFICULTY: normal
+            FTB_MODPACK_ID: {{ minecraft_modpack_id }}
+        ports:
+            - {{ minecraft_server_port }}:25565

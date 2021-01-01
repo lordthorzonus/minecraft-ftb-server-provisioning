@@ -1,0 +1,5 @@
+---
+- name: restart minecraft server
+  community.general.docker_compose:
+    project_src: /home/minecraft/server
+    restarted: true
