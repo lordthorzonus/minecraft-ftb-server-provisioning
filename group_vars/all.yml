@@ -4,7 +4,7 @@ minecraft_modpack_id: "4"
 minecraft_server_memory_amount: "4G"
 
 # Docker related variables
-docker_compose_version: "1.26.0"
+docker_compose_version: "1.29.2"
 docker_package_state: present
 docker_users:
   - minecraft
