@@ -35,7 +35,7 @@
   notify: restart minecraft server
 
 - name: Ensure minecraft server container is running
-  community.general.docker_compose:
+  community.docker.docker_compose:
     project_src: /home/minecraft/server
     state: present
 
