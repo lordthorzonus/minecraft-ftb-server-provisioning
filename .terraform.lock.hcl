@@ -21,22 +21,22 @@ provider "registry.terraform.io/hashicorp/aws" {
 }
 
 provider "registry.terraform.io/hetznercloud/hcloud" {
-  version     = "1.28.1"
-  constraints = "~> 1.28.0"
+  version     = "1.30.0"
+  constraints = "~> 1.30.0"
   hashes = [
-    "h1:kR9qo2Gj5LU+6DdBFzWSeMEVyzgPcULrGOErEO0TYzY=",
-    "zh:393474928ea879e5a19a70ffd490058beacbd15a7d833476dd1bf46d58aaee1b",
-    "zh:4041f52e7c72588c8d962d2688ab282b284f1fd0ac06b0a30801214dcae25edd",
-    "zh:4740fa2409dfc01b9cf5eedaa8851170bc234013e0f2d0fdabe25c96dd124b9d",
-    "zh:489ed37562e22167728a4e512c67bff7c124b9e6f5659b71089bc786d3d164ad",
-    "zh:49c08a2153bcbe5469b8d076daec155c7af66e879ceeac06b06e29811a3c7bf6",
-    "zh:5dd1ad9c37babf54e4babfc9c280dcd44a86f2ab3688ef7fe6322baf54b3d4d9",
-    "zh:b29848fe1129f18cfac906d645c7e46c630965569360631fb3180d12814b9a90",
-    "zh:c79f3365afe220721193cd244edf215fc70cfc2023b6525acff9fd55475a6261",
-    "zh:d1b2b3f6f7fcf64300ac9069ca3de20efe42011e70c70dd1d67bc8d61ecdc91f",
-    "zh:d41b2c21b34a4e82ecfa76fd34afb4ac5ee812e82b9bc6b3b96b08bd35d08434",
-    "zh:d7bbcbab4f28fd1d343c6c0670d4a4a79de82dd46be3f655a1a63cea7519fcaa",
-    "zh:e996cd633c3b8e37dab96d72b13a48606d5d95cbac4c7452da85d083fc36ff93",
-    "zh:fd4ac191d46016a755ad82079e6b95909613f260f98dd8c0472b094b14009462",
+    "h1:BEVOMhDiYrIrVDwgaWujgfADjIKu4j0C5LWq2L7fzkc=",
+    "h1:DUmXsSp1OX18WH5oKtW0VnTgrk5ucbO7wRrqo97NiuY=",
+    "h1:K9N/DwhL1mT+fxly2pnkwI7Tnhm7w7CF+BkG5sEx7TA=",
+    "h1:MWOX5Bf8yez4N5D5MFN+KB93WqNWsRRNwrfjLNV3i+g=",
+    "h1:RCB29eThK0QvExXTi5wY/dO1DOVLpVOGNjtdV/C1kW8=",
+    "h1:TjI5DN7PfR3R58vb9YBBni7z6+lElgDfhktOgktgwiQ=",
+    "h1:UOiUjzQsB5c1YbYwQepx0q69s3JUCk9nBgZM7L1uPGg=",
+    "h1:W9XMcTgK2QFubZ7OW0AddDO04F1pX8l9QI4c3Q728CM=",
+    "h1:fW6DxVfCzY+oPq6vnj9UPcnzm6NZwjpO/ZGsNbUQG+c=",
+    "h1:jYgzZhxjonjdZphyCezteAcOxFR3UNW/9iObriJwZug=",
+    "h1:lr4olfe1mUGriVuP9/faMwapw6xD5Pydbmf0rqYGJSQ=",
+    "h1:m3KtSMnhWIQFfyf/qnMj8jiNwNEh16fo2CLdnJklhU4=",
+    "h1:xPoXTz7X4lSXlYw/4UW1C3zuhwRaxSZM72X/pU13Byg=",
+    "h1:yJhB2+17OfREGdlbo2HSzVSiQNxStjGRdlXjRmi0AUQ=",
   ]
 }
