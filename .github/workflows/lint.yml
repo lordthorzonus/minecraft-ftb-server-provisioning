@@ -31,9 +31,9 @@ jobs:
 
   lint-ansible-playbooks:
     env:
-      ANSIBLE_VERSION: "2.10.0"
-      PYTHON_VERSION: "3.9.1"
-      ANSIBLE_LINT_VERSION: "4.3.7"
+      ANSIBLE_VERSION: "5.2.0"
+      PYTHON_VERSION: "3.10.1"
+      ANSIBLE_LINT_VERSION: "5.3.2"
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout repository
