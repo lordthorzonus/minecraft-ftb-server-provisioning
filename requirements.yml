@@ -7,6 +7,6 @@ collections:
   - name: community.general
     version: "5.2.0"
   - name: hetzner.hcloud
-    version: "1.6.0"
+    version: "1.8.1"
   - name: community.docker
     version: "2.6.0"
