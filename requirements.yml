@@ -9,4 +9,4 @@ collections:
   - name: hetzner.hcloud
     version: "1.8.1"
   - name: community.docker
-    version: "2.6.0"
+    version: "2.7.0"
