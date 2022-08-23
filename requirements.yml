@@ -5,7 +5,7 @@ roles:
 
 collections:
   - name: community.general
-    version: "5.4.0"
+    version: "5.5.0"
   - name: hetzner.hcloud
     version: "1.8.1"
   - name: community.docker
