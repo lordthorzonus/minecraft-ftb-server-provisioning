@@ -4,7 +4,7 @@ terraform {
       source  = "hetznercloud/hcloud"
       version = "~> 1.42.0"
     }
-    aws = "~> 4.0"
+    aws = "~> 5.0"
   }
 }
 
